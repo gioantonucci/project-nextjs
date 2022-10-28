@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import data from "../database/data";
 
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
     window
     .fetch('/api/avo')
     .then((res) => res.json())
-    .then(({data, length}) => {
+    .then(({data}) => {
       setProductList(data)
     })
   }, [])
