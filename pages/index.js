@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 import data from "../database/data";
 
 
@@ -17,7 +16,6 @@ const Home = () => {
  
   return (
     <div>
-      <Navbar />
       <div>Next.js!</div>
         {productList.map((product) => (
           <div key={product.id}>{product.name}</div>
